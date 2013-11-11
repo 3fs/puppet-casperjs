@@ -1,6 +1,6 @@
 class casperjs (
   $package_version = '1.0.3', # set package version to download
-  $source_url = "https://codeload.github.com/n1k0/casperjs/legacy.zip/$package_version"
+  $source_url = "https://codeload.github.com/n1k0/casperjs/legacy.zip/$package_version",
   $source_dir = '/opt',
   $install_dir = '/usr/local/bin',
   $package_update = false,
