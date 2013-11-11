@@ -1,0 +1,8 @@
+name '3fs-casperjs'
+version '0.0.1'
+source 'https://github.com/3fs/puppet-casperjs'
+author '3fs'
+license 'MIT License'
+summary 'Simple puppet module that installs CasperJS - navigation scripting and testing utility for PhantomJS.'
+description 'Simple puppet module that installs CasperJS - navigation scripting and testing utility for PhantomJS.'
+project_page 'https://github.com/3fs/puppet-casperjs'
