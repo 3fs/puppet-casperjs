@@ -1,4 +1,4 @@
 puppet-casperjs
 ===============
 
-Puppet module for installation of CasperJS
+Simple puppet module that installs CasperJS
