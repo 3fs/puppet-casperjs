@@ -1,13 +1,12 @@
 class casperjs (
   $package_version = '1.0.3', # set package version to download
-  $source_url = "https://codeload.github.com/n1k0/casperjs/legacy.zip/$package_version",
+  $source_url = "https://codeload.github.com/n1k0/casperjs/zip/$package_version",
   $source_dir = '/opt',
   $install_dir = '/usr/local/bin',
-  $package_update = false,
-
+  $package_update = false
 ) {
   exec { 'get casperjs':
-    command => "/usr/bin/curl --silent --show-error $source_url --output $source_dir/casperjs.zip && mkdir $source_dir/casperjs && unzip $source_dir/casperjs.zip -d $source_dir && mv $source_dir/n1k0-casperjs-*/* $source_dir/casperjs/ && rm -rf $source_dir/n1k0-casperjs-*",
+    command => "/usr/bin/curl --silent --show-error $source_url --output $source_dir/casperjs.zip && mkdir $source_dir/casperjs && unzip $source_dir/casperjs.zip -d $source_dir && mv $source_dir/casperjs-$package_version/* $source_dir/casperjs/ && rm -rf $source_dir/casperjs-$package_version",
     creates => "$source_dir/casperjs/",
     require => Package['curl', 'unzip'],
   }
