@@ -21,7 +21,7 @@ class casperjs (
   }
 
   exec { 'get casperjs':
-    command => "/usr/bin/curl --silent --show-error ${source_url} --output ${source_dir}/casperjs.zip \
+    command => "/usr/bin/curl --silent --show-error ${pkg_src_url} --output ${source_dir}/casperjs.zip \
       && mkdir ${source_dir}/casperjs \
       && unzip ${source_dir}/casperjs.zip -d ${source_dir} \
       && mv ${source_dir}/casperjs-${package_version}/* ${source_dir}/casperjs/ \
